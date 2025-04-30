@@ -73,6 +73,8 @@
   <img src="https://github.com/user-attachments/assets/1da9957b-3fb4-4638-9d9e-8440a9ab9c11" width="32%" />
 </p>
 
+---
+
 ### Примеры использования
 <p float="left">
   <img src="https://github.com/user-attachments/assets/67db0396-5efa-4983-acfc-70cedb7e17df" width="32%" />
@@ -80,6 +82,7 @@
   <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="32%" />
 </p>
 
+---
 
 ### Тестирование и сравнительный анализ 1
 <p float="left">
@@ -96,6 +99,8 @@
   <img src="https://github.com/user-attachments/assets/e5850328-c23b-4625-be7d-eb8687db3d6f" width="19%" />
 </p>
 
+---
+
 ### Тестирование и сравнительный анализ 2
 <p float="left">
   <img src="https://github.com/user-attachments/assets/317c88f6-b5c9-487b-8187-478aa43b4af6" width="24%" />
@@ -103,6 +108,7 @@
   <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
   <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
 </p>
+
 > Ответы на обычном аккаунте. Фото №3 от 06.06.2024 | Фото №4 от 30.04.2025
 
 <p float="left">
@@ -111,5 +117,6 @@
   <img src="https://github.com/user-attachments/assets/c6f41067-4b78-4a0f-bb5e-25b0348689a0" width="24%" />
   <img src="https://github.com/user-attachments/assets/d430768e-192f-489b-9fdd-a041001c228f" width="24%" />
 </p>
+
 > Ответы через Analyst Machine.
 
