@@ -105,7 +105,7 @@
 <p float="left">
   <img src="https://github.com/user-attachments/assets/317c88f6-b5c9-487b-8187-478aa43b4af6" width="24%" />
   <img src="https://github.com/user-attachments/assets/188212d1-fcf0-44b5-b4b4-096d441e2431" width="24%" />
-  <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
+  <img src="https://github.com/user-attachments/assets/2f69de14-940e-4c08-96bc-f7f525bba5d7" width="24%" />
   <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
 </p>
 
