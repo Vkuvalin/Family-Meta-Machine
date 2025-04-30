@@ -5,6 +5,11 @@
 
 🔗 [Открыть Analyst Machine в ChatGPT](https://chatgpt.com/g/g-67eb695825488191bb40e714709d57c5-analyst-machine)
 - [Фотогалерея](#фотогалерея)
+- [Знакомство](#знакомство)
+- [Примеры использования](#примеры-использования)
+- [Тестирование и сравнительный анализ 1](#тестирование-и-сравнительный-анализ-1)
+- [Тестирование и сравнительный анализ 2](#тестирование-и-сравнительный-анализ-2)
+
 
 ## 📝 Описание
 
@@ -63,20 +68,24 @@
 
 ### Знакомство
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/c9bf72f1-43d1-4fe8-a974-bf324739be56" width="16%" />
-  <img src="https://github.com/user-attachments/assets/51bcd42b-7ceb-4078-8ab7-64349f4705cf" width="16%" />
-  <img src="https://github.com/user-attachments/assets/1da9957b-3fb4-4638-9d9e-8440a9ab9c11" width="16%" />
-  <img src="https://github.com/user-attachments/assets/67db0396-5efa-4983-acfc-70cedb7e17df" width="16%" />
-  <img src="https://github.com/user-attachments/assets/7e7e828f-9b7d-4765-bbbe-c20b21c3206c" width="16%" />
-  <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="16%" />
+  <img src="https://github.com/user-attachments/assets/c9bf72f1-43d1-4fe8-a974-bf324739be56" width="32%" />
+  <img src="https://github.com/user-attachments/assets/51bcd42b-7ceb-4078-8ab7-64349f4705cf" width="32%" />
+  <img src="https://github.com/user-attachments/assets/1da9957b-3fb4-4638-9d9e-8440a9ab9c11" width="32%" />
+</p>
+
+### Примеры использования
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/67db0396-5efa-4983-acfc-70cedb7e17df" width="32%" />
+  <img src="https://github.com/user-attachments/assets/7e7e828f-9b7d-4765-bbbe-c20b21c3206c" width="32%" />
+  <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="32%" />
 </p>
 
 
-### Тестирование и сравнительный анализ
+### Тестирование и сравнительный анализ 1
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/41ab7793-2705-4b0d-b39c-5f56d95c5cb2" width="19%" />
-  <img src="https://github.com/user-attachments/assets/9a2847a3-a8c8-4406-bc22-836af4d95b36" width="19%" />
-  <img src="https://github.com/user-attachments/assets/a60c5fe0-1443-41cc-b2e0-01f68926a03a" width="19%" />
+  <img src="https://github.com/user-attachments/assets/41ab7793-2705-4b0d-b39c-5f56d95c5cb2" width="32%" />
+  <img src="https://github.com/user-attachments/assets/9a2847a3-a8c8-4406-bc22-836af4d95b36" width="32%" />
+  <img src="https://github.com/user-attachments/assets/a60c5fe0-1443-41cc-b2e0-01f68926a03a" width="32%" />
 </p>
 
 <p float="left">
@@ -87,6 +96,20 @@
   <img src="https://github.com/user-attachments/assets/e5850328-c23b-4625-be7d-eb8687db3d6f" width="19%" />
 </p>
 
+### Тестирование и сравнительный анализ 2
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/317c88f6-b5c9-487b-8187-478aa43b4af6" width="24%" />
+  <img src="https://github.com/user-attachments/assets/188212d1-fcf0-44b5-b4b4-096d441e2431" width="24%" />
+  <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
+  <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
+</p>
+> Ответы на обычном аккаунте. Фото №3 от 06.06.2024 | Фото №4 от 30.04.2025
 
-
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/5db5e9b5-42c3-41d8-973f-ce2dbda24281" width="24%" />
+  <img src="https://github.com/user-attachments/assets/30e1c9da-1449-474a-925f-7cb9a492a793" width="24%" />
+  <img src="https://github.com/user-attachments/assets/c6f41067-4b78-4a0f-bb5e-25b0348689a0" width="24%" />
+  <img src="https://github.com/user-attachments/assets/d430768e-192f-489b-9fdd-a041001c228f" width="24%" />
+</p>
+> Ответы через Analyst Machine.
 
