@@ -9,7 +9,7 @@
 - [Примеры использования](#примеры-использования)
 - [Тестирование и сравнительный анализ 1](#тестирование-и-сравнительный-анализ-1)
 - [Тестирование и сравнительный анализ 2](#тестирование-и-сравнительный-анализ-2)
-
+- [Другие работы](#другие-работы)
 
 ## 📝 Описание
 
@@ -131,10 +131,13 @@
 <p float="left">
   <img src="https://github.com/user-attachments/assets/594a942f-ca44-4722-90af-1e9640b2c06a" width="24%" />
   <img src="https://github.com/user-attachments/assets/d820a308-c683-4e96-a819-3b1b18887522" width="24%" />
-  <img src="https://github.com/user-attachments/assets/489b3fea-a634-4823-9bd3-78635a4de4a1" width="24%" />
+  <img src="" width="24%" />
   <img src="https://github.com/user-attachments/assets/492c582d-c70e-43d6-8c3a-c48312b3f195" width="24%" />
 </p>
-
-
-
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/489b3fea-a634-4823-9bd3-78635a4de4a1" width="24%" />
+  <img src="https://github.com/user-attachments/assets/8ee5a3ca-e255-4e44-b531-168c87e9c922" width="24%" />
+  <img src="https://github.com/user-attachments/assets/41a40651-3ff0-41d3-80cc-560a9ce44ddc" width="24%" />
+  <img src="https://github.com/user-attachments/assets/e1fe620c-6fae-47e4-8752-1c081753c2b2" width="24%" />
+</p>
 
