@@ -216,10 +216,9 @@
 
 ### Тестирование и сравнительный анализ 2
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/317c88f6-b5c9-487b-8187-478aa43b4af6" width="24%" />
-  <img src="https://github.com/user-attachments/assets/188212d1-fcf0-44b5-b4b4-096d441e2431" width="24%" />
-  <img src="https://github.com/user-attachments/assets/2f69de14-940e-4c08-96bc-f7f525bba5d7" width="24%" />
-  <img src="https://github.com/user-attachments/assets/ecae64fc-da22-46e4-a5ee-c7605e3bb417" width="24%" />
+  <img src="https://github.com/user-attachments/assets/6cedd4fe-9a6f-49ef-bcb2-5d189b44fc90" width="31%" />
+  <img src="https://github.com/user-attachments/assets/70d91ea1-3027-4b86-b6f5-7f36f19a317f" width="31%" />
+  <img src="https://github.com/user-attachments/assets/96e58c80-d239-4d51-b92a-d9319f717069" width="31%" />
 </p>
 
 > Ответы на обычном аккаунте. Фото №3 от 06.06.2024 | Фото №4 от 30.04.2025
