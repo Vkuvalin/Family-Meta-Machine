@@ -120,3 +120,21 @@
 
 > Ответы через Analyst Machine.
 
+
+### Другие работы
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/ac922614-4462-4302-a9fe-b67b219ccab4" width="24%" />
+  <img src="https://github.com/user-attachments/assets/532756e9-1b98-4e7e-9c7b-6becb6cf6afb" width="24%" />
+  <img src="https://github.com/user-attachments/assets/45177b19-78f1-40fb-9da5-434809096b32" width="24%" />
+  <img src="https://github.com/user-attachments/assets/d820a308-c683-4e96-a819-3b1b18887522" width="24%" />
+</p>
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/594a942f-ca44-4722-90af-1e9640b2c06a" width="24%" />
+  <img src="https://github.com/user-attachments/assets/d820a308-c683-4e96-a819-3b1b18887522" width="24%" />
+  <img src="https://github.com/user-attachments/assets/489b3fea-a634-4823-9bd3-78635a4de4a1" width="24%" />
+  <img src="https://github.com/user-attachments/assets/492c582d-c70e-43d6-8c3a-c48312b3f195" width="24%" />
+</p>
+
+
+
+
