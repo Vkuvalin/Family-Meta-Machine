@@ -133,7 +133,7 @@
   <img src="https://github.com/user-attachments/assets/96e58c80-d239-4d51-b92a-d9319f717069" width="31%" />
 </p>
 
-> Ответы на обычном аккаунте. Фото №3 от 06.06.2024 | Фото №4 от 30.04.2025
+> Ответы на обычном аккаунте.
 
 <p float="left">
   <img src="https://github.com/user-attachments/assets/5db5e9b5-42c3-41d8-973f-ce2dbda24281" width="24%" />
@@ -142,7 +142,7 @@
   <img src="https://github.com/user-attachments/assets/d430768e-192f-489b-9fdd-a041001c228f" width="24%" />
 </p>
 
-> Ответы через Analyst Machine.
+> Ответы через Меta Machine.
 
 
 ### Другие работы
