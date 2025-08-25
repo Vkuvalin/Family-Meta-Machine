@@ -107,17 +107,23 @@
   <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="32%" />
 </p>
 
+> Общеие примеры. Старая архитектура.
+
 <p float="left">
   <img src="https://github.com/user-attachments/assets/1965622a-ec6c-4538-83f1-3a2173948563" width="32%" />
   <img src="https://github.com/user-attachments/assets/1a992134-b2b5-44d6-b8da-eac22935e9a6" width="32%" />
   <img src="https://github.com/user-attachments/assets/15a3af05-b9d4-4159-a687-f82542993baf" width="32%" />
 </p>
 
+> Просьба составить персональный курс для обучения английскому. Новая архитектура.
+
 <p float="left">
   <img src="https://github.com/user-attachments/assets/5ad0e647-da73-4561-8bd6-0c337ca059d8" width="32%" />
   <img src="https://github.com/user-attachments/assets/26468373-e3d1-46e4-b2a3-6052101d1d75" width="32%" />
   <img src="https://github.com/user-attachments/assets/97d8460b-21bb-4a91-a87e-e477f75fb961" width="32%" />
 </p>
+
+> Пример со скудными промтами. Новая архитектура.
 
 ---
 
@@ -145,7 +151,7 @@
   <img src="https://github.com/user-attachments/assets/96e58c80-d239-4d51-b92a-d9319f717069" width="31%" />
 </p>
 
-> Ответы на обычном аккаунте.
+> Ответы на обычном аккаунте. Обычная GPT.
 
 <p float="left">
   <img src="https://github.com/user-attachments/assets/5db5e9b5-42c3-41d8-973f-ce2dbda24281" width="24%" />
@@ -154,7 +160,7 @@
   <img src="https://github.com/user-attachments/assets/d430768e-192f-489b-9fdd-a041001c228f" width="24%" />
 </p>
 
-> Ответы через Меta Machine.
+> Ответы через Меta Machine. Старая архитетура.
 
 
 ### Другие работы
@@ -182,3 +188,5 @@
   <img src="https://github.com/user-attachments/assets/3bea75d5-9652-4772-ac44-3cb4c729f98c" width="24%" />
   <img src="https://github.com/user-attachments/assets/cff7c12a-d88a-477c-93b9-6a4eed017963" width="24%" />
 </p>
+
+> Тестирование с новой архитектурой не добавлял.
