@@ -107,6 +107,12 @@
   <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="32%" />
 </p>
 
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/1965622a-ec6c-4538-83f1-3a2173948563" width="32%" />
+  <img src="https://github.com/user-attachments/assets/1a992134-b2b5-44d6-b8da-eac22935e9a6" width="32%" />
+  <img src="https://github.com/user-attachments/assets/15a3af05-b9d4-4159-a687-f82542993baf" width="32%" />
+</p>
+
 ---
 
 ### Тестирование и сравнительный анализ 1
