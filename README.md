@@ -145,6 +145,26 @@
 ---
 
 ### Тестирование и сравнительный анализ 2
+
+> Сравнение ответов 1 из 10 моделей "Education Machine" с новой функцией в GPT 5 "Учеба"
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/47cdd904-6a4e-4b9d-b256-09c65b96f176" width="49%" />
+  <img src="https://github.com/user-attachments/assets/b1cbf4cb-00a1-43c2-8290-bf6494fa52a4" width="49%" />
+</p>
+
+> Как отвечает GPT 5 в рамках режима "Учеба". Наблюдаем достаточно поверхностные ответы.
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/0ddb13d9-5c1e-487c-b6ef-7bd37905270d" width="31%" />
+  <img src="https://github.com/user-attachments/assets/07429d95-0561-4876-806d-98cdbb062a6c" width="31%" />
+  <img src="https://github.com/user-attachments/assets/d8de1859-1e5b-4ca6-9c58-6c0a25700d2e" width="31%" />
+</p>
+
+> Ответы от "Education Machine" с моделью 4o.
+
+
+### Тестирование и сравнительный анализ 3
 <p float="left">
   <img src="https://github.com/user-attachments/assets/6cedd4fe-9a6f-49ef-bcb2-5d189b44fc90" width="31%" />
   <img src="https://github.com/user-attachments/assets/70d91ea1-3027-4b86-b6f5-7f36f19a317f" width="31%" />
