@@ -155,6 +155,16 @@
 
 > Как отвечает GPT 5 в рамках режима "Учеба". Наблюдаем достаточно поверхностные ответы.
 
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/c17463d3-5f16-4dc2-a7e8-53d565130e2d" width="31%" />
+  <img src="https://github.com/user-attachments/assets/79861ee5-a69b-4743-8ac9-9e0a5647f122" width="31%" />
+  <img src="https://github.com/user-attachments/assets/ae311849-74e5-423a-bfde-e4dda79b976b" width="31%" />
+</p>
+
+> Ответы от "Education Machine" с моделью GPT 5.
+
+
 <p float="left">
   <img src="https://github.com/user-attachments/assets/0ddb13d9-5c1e-487c-b6ef-7bd37905270d" width="31%" />
   <img src="https://github.com/user-attachments/assets/07429d95-0561-4876-806d-98cdbb062a6c" width="31%" />
@@ -162,6 +172,15 @@
 </p>
 
 > Ответы от "Education Machine" с моделью 4o.
+
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/9a1ff67f-800d-4466-a38a-34f49ea3e360" width="31%" />
+  <img src="https://github.com/user-attachments/assets/76d3fa98-b67f-4b4b-a9a6-351f5e8c8512" width="31%" />
+  <img src="https://github.com/user-attachments/assets/c5a6e2a6-b0f2-4b6b-b552-0b72a1e61870" width="31%" />
+</p>
+
+> Ответы от "Education Machine" с моделью 3o.
 
 
 ### Тестирование и сравнительный анализ 3
