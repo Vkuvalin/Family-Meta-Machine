@@ -166,21 +166,21 @@
 
 
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/0ddb13d9-5c1e-487c-b6ef-7bd37905270d" width="31%" />
-  <img src="https://github.com/user-attachments/assets/07429d95-0561-4876-806d-98cdbb062a6c" width="31%" />
-  <img src="https://github.com/user-attachments/assets/d8de1859-1e5b-4ca6-9c58-6c0a25700d2e" width="31%" />
-</p>
-
-> Ответы от "Education Machine" с моделью 4o.
-
-
-<p float="left">
   <img src="https://github.com/user-attachments/assets/9a1ff67f-800d-4466-a38a-34f49ea3e360" width="31%" />
   <img src="https://github.com/user-attachments/assets/76d3fa98-b67f-4b4b-a9a6-351f5e8c8512" width="31%" />
   <img src="https://github.com/user-attachments/assets/c5a6e2a6-b0f2-4b6b-b552-0b72a1e61870" width="31%" />
 </p>
 
 > Ответы от "Education Machine" с моделью 3o.
+
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/0ddb13d9-5c1e-487c-b6ef-7bd37905270d" width="31%" />
+  <img src="https://github.com/user-attachments/assets/07429d95-0561-4876-806d-98cdbb062a6c" width="31%" />
+  <img src="https://github.com/user-attachments/assets/d8de1859-1e5b-4ca6-9c58-6c0a25700d2e" width="31%" />
+</p>
+
+> Ответы от "Education Machine" с моделью 4o.
 
 
 ### Тестирование и сравнительный анализ 3
