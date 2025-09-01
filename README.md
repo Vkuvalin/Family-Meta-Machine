@@ -158,9 +158,9 @@
 
 
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/c17463d3-5f16-4dc2-a7e8-53d565130e2d" width="31%" />
-  <img src="https://github.com/user-attachments/assets/79861ee5-a69b-4743-8ac9-9e0a5647f122" width="31%" />
-  <img src="https://github.com/user-attachments/assets/ae311849-74e5-423a-bfde-e4dda79b976b" width="31%" />
+  <img src="https://github.com/user-attachments/assets/92d4d321-253e-44fd-939d-05c80a7abf93" width="31%" />
+  <img src="https://github.com/user-attachments/assets/68d65b02-0f24-45cc-9f2c-70c3dc00e857" width="31%" />
+  <img src="https://github.com/user-attachments/assets/f681c023-2b93-4c75-8655-c19782b6e969" width="31%" />
 </p>
 
 > Ответы от "Education Machine" с моделью GPT 5.
