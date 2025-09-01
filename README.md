@@ -108,7 +108,7 @@
   <img src="https://github.com/user-attachments/assets/0fb1375f-8ab4-4fe2-b2d3-958d068d8d2d" width="32%" />
 </p>
 
-> Общеие примеры. Старая архитектура.
+> Общие примеры. Старая архитектура.
 
 <p float="left">
   <img src="https://github.com/user-attachments/assets/1965622a-ec6c-4538-83f1-3a2173948563" width="32%" />
