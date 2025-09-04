@@ -94,10 +94,9 @@
 
 ### Знакомство
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/04c8606b-cc2c-40dc-a8e7-920a720a83a3" width="24%" />
-  <img src="https://github.com/user-attachments/assets/51bcd42b-7ceb-4078-8ab7-64349f4705cf" width="24%" />
-  <img src="https://github.com/user-attachments/assets/1da9957b-3fb4-4638-9d9e-8440a9ab9c11" width="24%" />
-  <img src="https://github.com/user-attachments/assets/4b9510cb-4774-422c-824f-1d41073013bd" width="24%" />
+  <img src="https://github.com/user-attachments/assets/04c8606b-cc2c-40dc-a8e7-920a720a83a3" width="32%" />
+  <img src="https://github.com/user-attachments/assets/51bcd42b-7ceb-4078-8ab7-64349f4705cf" width="32%" />
+  <img src="https://github.com/user-attachments/assets/1da9957b-3fb4-4638-9d9e-8440a9ab9c11" width="32%" />
 </p>
 
 ---
