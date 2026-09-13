@@ -8,7 +8,7 @@
 
 **Legacy R&D · prompt / instruction orchestration framework**
 
-[Сайт проекта](https://meta-machine.vercel.app/) · [Архитектура](https://meta-machine.vercel.app/#architecture)
+[Сайт проекта](https://meta-machine.vercel.app/#home) · [Архитектура](https://meta-machine.vercel.app/#architecture)
 
 </div>
 
