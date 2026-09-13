@@ -287,11 +287,3 @@ Output Formatting
 </p>
 
 > Изображения относятся к старым версиям архитектуры. Актуальные на момент завершения проекта версии отдельно не документировались.
-
----
-
-## R&D focus
-
-**Cognitive Systems Design · Prompt Systems Architecture · LLM Interaction Design**
-
-Personal R&D project.
