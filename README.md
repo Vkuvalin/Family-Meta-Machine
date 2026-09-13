@@ -5,7 +5,7 @@
 
 🔗 [Сайт проекта Meta Machine](https://meta-machine.vercel.app/)
 
-🔗 [Подробная архитектура](https://meta-machine.it.com/#architecture)
+🔗 [Подробная архитектура](https://meta-machine.vercel.app/#architecture)
 - [Фотогалерея](#фотогалерея)
 - [Знакомство](#знакомство)
 - [Примеры использования](#примеры-использования)
