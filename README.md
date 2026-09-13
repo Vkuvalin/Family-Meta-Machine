@@ -1,5 +1,5 @@
 # 🧠 Family Meta Machine
-> Cognitive Systems Designer / AI Interaction Architect | личный R&D/MVP
+> Cognitive Systems Designer / AI Interaction Architect | личный R&D
 
 **Meta Machine** — это модульная мета-когнитивная система, разработанная как интеллектуальная надстройка поверх GPT. **Её цель** — обеспечить управляемое, проверяемое и адаптивное мышление ИИ в сложных задачах: от аналитики и образования до философских или стратегических разборов.
 
