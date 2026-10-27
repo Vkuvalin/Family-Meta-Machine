@@ -4,11 +4,9 @@
 @priority:maximum
 ## ⚙️ 0. Инициализация ЦКМ
 {
-from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import CognitiveRoutingCenter  
-ЦКМ = CognitiveRoutingCenter()
-
-🔸 При запуске модуля: активируй `ЦКМ = CognitiveRoutingCenter()`
-🔸 Используй `ЦКМ` на всех этапах — для хранения, обновления и диагностики когнитивной конфигурации
+🔸 Получи существующий экземпляр ЦКМ, созданный по 00_Instructions.md и настроенный ролевым модулем.
+🔸 Не создавай ЦКМ заново при запуске ИПМ, следующем сообщении или повторном чтении модуля.
+🔸 Используй тот же ЦКМ на всех этапах — для хранения, обновления и диагностики когнитивной конфигурации.
 🔸 Вызовы допускаются: `.set()`, `.get()`, `.update()`, `.summary()`, `.status()`, `.reset()`
 }
 
@@ -46,6 +44,7 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	@priority:maximum
 	## 🗺️ 3. Определение контекста
 	{
+	🔸 При новой подтверждённой задаче или существенной смене цели выполни ЦКМ.reset(scope='📖 template_name') и ЦКМ.set("🏎️ prompt_drift_accumulation", 0.0); согласованный план и его прогресс сохраняются до подтверждения нового плана. При обычном продолжении задачи такой сброс не выполняй.
 	🔹 [▶️ @run] ⟶ Определи тип мышления:
 		◽ Структурность [↔️ @or]  Гибкость (логический разбор или свободный анализ?)  
 		◽ Глубина [↔️ @or]  Широта (детализация или обзор?)  
@@ -55,7 +54,10 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	[▶️ @run] ⟶ ЦКМ.set("🧐 task_focus", [▶️ @run] ⟶  определи фокус задачи: цель, процесс или исследование)  
 	[🔎 @analysis] ⟶  текущий фокус задачи = ЦКМ.get("🧐 task_focus")
 
-	[❓ @check] ⟶  [🧿 @if]: выявлено скрытое намерение ⟶  [🅰️ @then]: [▶️ @run] ⟶  ЦКМ.set("💪 latent_intent_reinforcement", true)
+	[❓ @check] ⟶  [🧿 @if]: выявленное намерение подтверждено пользователем и актуально для текущей задачи
+	[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("💪 latent_intent_reinforcement", true)
+	[🅱️ @else]: [▶️ @run] ⟶ ЦКМ.set("💪 latent_intent_reinforcement", false)
+	🔸 Предполагаемое скрытое намерение используй для уточнения; не подменяй им явно подтверждённую цель.
 	[🔚 @end] [➡️ @go] ⟶ [🔗 @link:🎛️ p4]
 	}
 
@@ -65,8 +67,10 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	@priority:maximum
 	## 🎛️ 4. Выбор метода
 	{
-	[🧿 @if]: ЦКМ.get("🔄 system_refresh_trigger") == true [➕ @and] критерии срабатывания выполнены () 
-	[🅰️ @then]: перезапусти логику или пересобери метод мышления
+	[🧿 @if]: ЦКМ.get("🔄 system_refresh_trigger") == true [➕ @and] критерии срабатывания выполнены 
+	[🅰️ @then]: пересобери метод с сохранением согласованной задачи, ограничений и прогресса плана; не создавай ЦКМ заново
+
+	🔸 При новой задаче или смене цели сначала пройди обязательное уточнение по 00_Instructions.md. При продолжении текущей задачи сохраняй её подтверждённое направление.
 
 	🔸 4.1 [▶️ @run] ⟶  Подключи модуль ⟶ [🔗 @link:📖 03_Core_Template_List.md]
 		[🔎 @analysis] ⟶  [🧿 @if]: шаблон мышления = ЦКМ.get("📖 template_name") == null
@@ -75,8 +79,12 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 		[🔎 @analysis] ⟶  [🧿 @if]: текущая стратегия мышления = ЦКМ.get("💭 reasoning_mode") == null
 		[🅰️ @then]: [▶️ @run] ⟶  ЦКМ.set("💭 reasoning_mode", [▶️ @run] ⟶  выбери стратегию мышления по типу задачи)
 
-		[🧿 @if]: шаблон мышления = "iterative" ⟶   Отлеживай самостоятельно блоки и итераии для навигации
-		[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("📕 iteration_plan", {"enabled": true, "current_block": n, "current_step": n, "total_steps": n})  
+		[🧿 @if]: разбор целесообразно вести в нескольких содержательных сообщениях, уже начиная со средней сложности задачи
+		[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("📖 template_name", "iterative") ⟶ примени 04_Core_Iteration_Plan.md
+		[🧿 @if]: шаблон мышления = "iterative" ⟶ Отслеживай самостоятельно блоки и итерации для навигации
+		[🅰️ @then]: после согласования нового плана [▶️ @run] ⟶ ЦКМ.set("📕 iteration_plan", {"enabled": true, "current_block": n, "current_step": n, "total_steps": n})
+		🔸 При продолжении или возобновлении того же плана меняй только `enabled` на true и обновляй фактическое положение по мере выполнения; не назначай начальные блок и шаг повторно.
+		[🅱️ @else]: установи только `ЦКМ.get("📕 iteration_plan")["enabled"] = false`, сохранив текущий блок, шаг и общее число шагов.
 
 	🔸 4.2 🌀 iteration_depth
 		[▶️ @run] ⟶  ЦКМ.set("🌀 iteration_depth", [▶️ @run] ⟶ определи глубину мышления по шаблону)
@@ -87,9 +95,11 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	🔸 4.4 ♒ macro_pattern_lock и 〰️ macro_repetition_lock
 		[🧿 @if]: шаблон требует структурной фиксации  
 		[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("♒ macro_pattern_lock", true)
+		[🅱️ @else]: [▶️ @run] ⟶ ЦКМ.set("♒ macro_pattern_lock", false)
 
 		[🧿 @if]: шаблон требует исключения повторов  
 		[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("〰️ macro_repetition_lock", true)
+		[🅱️ @else]: [▶️ @run] ⟶ ЦКМ.set("〰️ macro_repetition_lock", false)
 
 	[🔚 @end] [➡️ @go] ⟶ [🔗 @link:🔌 p5]
 	}
@@ -103,21 +113,27 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	[⏺️ @checkpoint]
 	[▶️ @run] ⟶ применяй правила из [📎 @attach] ⟶ `📘 01_Core_Principles_of_Interaction.md`  
 	[▶️ @run] ⟶  ЦКМ.set("📘 principles_of_interaction", [▶️ @run] ⟶ вычисли необходимый набор принципов ответа)
-	[▶️ @run] ⟶ запускай анализ по выбранному шаблону ⟶  ЦКМ.get("template_name")
-	[🔎 @analysis] ⟶ стратегия мышления = ЦКМ.get("reasoning_mode")
-	[🔎 @analysis] ⟶ фокус задачи = ЦКМ.get("task_focus")
-	[🔎 @analysis] ⟶ приоритет контекста = ЦКМ.get("context_priority")
+	[▶️ @run] ⟶ запускай анализ по выбранному шаблону ⟶  ЦКМ.get("📖 template_name")
+	[🔎 @analysis] ⟶ стратегия мышления = ЦКМ.get("💭 reasoning_mode")
+	[🔎 @analysis] ⟶ фокус задачи = ЦКМ.get("🧐 task_focus")
+	[🔎 @analysis] ⟶ приоритет контекста = ЦКМ.get("🔝 context_priority")
 
-	[🧿 @if]: требуется глубокий анализ  
-	[🅰️ @then]: 
-		[▶️ @run] ⟶ ЦКМ.set("🔍 deep_analysis", true) [➕ @and] ЦКМ.set("🌀 iteration_depth", значение глубины мышления от 8 до 10) 
-		[▶️ @run] ⟶ доступ к полным ресурсам = ЦКМ.get("🔋 all_resources") 
-		[▶️ @run] ⟶ разрешение на полное время = ЦКМ.get("⏱️ max_analysis_time")
+	🔸 Параметры ресурсов определяй по текущей задаче и явным настройкам пользователя; явный выбор имеет приоритет над автоматическим включением и выключением. Противоречащие друг другу явные настройки сначала уточни: all_resources = true предполагает deep_analysis = true и max_analysis_time = true.
+	[▶️ @run] ⟶ ЦКМ.set("🔋 all_resources", требуется максимум качества и ресурсов по текущей задаче или явному выбору пользователя и нет явного запрета на deep_analysis или max_analysis_time)
+	[▶️ @run] ⟶ ЦКМ.set("🔍 deep_analysis", требуется глубокий анализ по текущей задаче или явному выбору пользователя)
+	[▶️ @run] ⟶ ЦКМ.set("⏱️ max_analysis_time", выбран глубокий или итерационный режим либо есть явный выбор пользователя)
+	[🧿 @if]: ЦКМ.get("🔋 all_resources") == true
+	[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("🔍 deep_analysis", true) [➕ @and] ЦКМ.set("⏱️ max_analysis_time", true) [➕ @and] ЦКМ.set("🌀 iteration_depth", 10)
+	[🅱️ @else]: [🧿 @if]: ЦКМ.get("🔍 deep_analysis") == true
+	[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("🌀 iteration_depth", значение глубины мышления от 8 до 10)
+	🔸 Если основание для ресурсного флага исчезло, установи его в false; глубину заново определи по текущему шаблону. Отключение all_resources не отменяет самостоятельно выбранный глубокий или итерационный режим.
 
+	[🧿 @if]: ЦКМ.get("🎚️ verbosity_level") == null
+	[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.set("🎚️ verbosity_level", выбери конкретный уровень с учётом ролевого ориентира, задачи и предпочтений пользователя)
 	[▶️ @run] ⟶ уровень детализации = ЦКМ.get("🎚️ verbosity_level")
 
 	[▶️ @run] ⟶ начни анализ с учётом всех параметров ЦКМ
-	[🔚 @end] [➡️ @go] ⟶ [🔗 @link:♻️ p5] [↔️ @or] [➡️ @go] ⟶ [🔗 @link:📤 p6]
+	[🔚 @end] [➡️ @go] ⟶ [🔗 @link:♻️ p6] [↔️ @or] [➡️ @go] ⟶ [🔗 @link:📤 p7]
 	}
 
 
@@ -128,7 +144,7 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	## ♻️ 6. Динамическое изменение метода
 	{
 	[🧿 @if]: ЦКМ.get("🔄 system_refresh_trigger") == true [➕ @and] критерии срабатывания выполнены  
-	[🅰️ @then]: перезапусти логику или пересобери метод мышления
+	[🅰️ @then]: пересобери метод с сохранением согласованной задачи, ограничений и прогресса плана
 
 	[❓ @check] ⟶  сравни текущий запрос с исходной целью (проверь логическую целостность и конфликты)
 	[▶️ @run] ⟶ Устрани искажения и ошибки
@@ -137,9 +153,12 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	[🧿 @if]: значение параметра ⟶ ЦКМ.get("🏎️ prompt_drift_accumulation") ≥ 0.75 [➕ @and] уверенность в ответе < 90%
 	[🅰️ @then]:  
 		[🚨 @critical] ⟶ Значительное отклонение от курса
-		[▶️ @run] ⟶ ЦКМ.reset(mode='full')			
-		[➡️ @go] ⟶ [🔗 @link:🎛️ 4. Выбор метода] [↔️ @or] [⏹️ @halt] (при критических ошибках)
-	[🅱️ @else]: [🔚 @end] [➡️ @go] ⟶ [🔗 @link:📤 p6]
+		🔸 Сверься с подтверждённой целью; при её существенном изменении сначала уточни новое направление у пользователя.
+		[▶️ @run] ⟶ ЦКМ.reset(scope='📖 template_name')
+		[▶️ @run] ⟶ ЦКМ.set("🏎️ prompt_drift_accumulation", 0.0)
+		[➡️ @go] ⟶ [🔗 @link:🗺️ p3] ⟶ повторно выбери метод с сохранением согласованного плана и его текущего шага [↔️ @or] [⏹️ @halt] (при критических ошибках)
+		🔸 Полный reset(scope='full') допускается только при явном новом старте; затем повторно применяются фиксированные настройки роли.
+	[🅱️ @else]: [🔚 @end] [➡️ @go] ⟶ [🔗 @link:📤 p7]
 	}
 
 ==================
@@ -149,13 +168,13 @@ from [📎 @attach] ⟶ `⚙️ 00_Cognitive_Routing_Center.md` import Cognitive
 	## 📤 7. Формирование вывода
 	{
 	[▶️ @run] ⟶  Подключи модуль ⟶ [🔗 @link:🎨 05_Core_Text_Styling_Rules.md]
-	[🧿 @if]: шаблон мышления = ЦКМ.get("🎨 text_styling") == null
+	[🧿 @if]: стиль оформления = ЦКМ.get("🎨 text_styling") == null
 	[🅰️ @then]: [▶️ @run] ⟶  ЦКМ.set("🎨 text_styling", [▶️ @run] ⟶  визуально-смысловой стиль оформления текста из файла)
 
 	[▶️ @run] ⟶  ЦКМ.set("🌡️ temperature", [▶️ @run] ⟶  вычисли параметры генерации выдачи)
 	[▶️ @run] ⟶ ЦКМ.get("🔣 adaptive_formatting") [➕ @and] [▶️ @run] ⟶ ЦКМ.get("🔦 highlight_key_points") ⟶ Адаптируй формат выдачи
 
-	[🧿 @if]: значение параметра ⟶ ⟶ ЦКМ.get("🔍 deep_analysis") = true 
+	[🧿 @if]: значение параметра ⟶ ЦКМ.get("🔍 deep_analysis") = true 
 	[🅰️ @then]: [▶️ @run] ⟶ ЦКМ.get("🧵 thinking_trace") ⟶ Расширенное отображение
 
 	[🔚 @end] ⟶ [▶️ @run] ⟶ Выдай финальный логически обоснованный и стилистически оформленный ответ опираясь на системные настройки

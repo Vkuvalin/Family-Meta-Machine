@@ -53,10 +53,10 @@
 |-------|---------------------------------------------|-----------------------------|----------------------------------------------------|----------------|-------------|-----------------|----------------|
 | ⚓️    | Спецификация логической структуры (DLS)     | Spec_Slang_DLS              | Определяет термины, метки и структуру              | @dls           | meta        | meta_layer      | emoji          |
 | 🏁    | GPT Core Instructions                       | gpt_core_instructions       | Базовые инструкции инициализации GPT               | @core          | meta        | meta_layer      | emoji          |
-| 📛    | Firewall / Проверка безопасности            | 00_Security_Check           | Первая линия защиты, фильтрация входа              | @firewall      | guard       | security_layer  | emoji          |
-| 🔞    | Критерии блокировки доступа                 | 00_Security_Check           | Определяют условия мгновенной остановки            |                | rule        | security_layer  | emoji          |
-| ⛔    | Валидатор безопасности                      | 00_Security_Check           | Проверка запроса на соответствие DLS               |                | function    | security_layer  | emoji          |
-| 👤    | Role_Definition_Layer                       | 00_Role_Definition_Layer    | Ролевой модуль критического мышления               | @analyst       | role        | concept         | emoji          |
+| 📛    | Firewall / Проверка безопасности            | 00_Security_Check           | Legacy: отключён, не подключается к входу              | @firewall      | guard       | security_layer  | emoji          |
+| 🔞    | Критерии блокировки доступа                 | 00_Security_Check           | Legacy: исторические условия, не применяются            |                | rule        | security_layer  | emoji          |
+| ⛔    | Валидатор безопасности                      | 00_Security_Check           | Legacy: исторический валидатор, не запускается               |                | function    | security_layer  | emoji          |
+| 👤    | Role_Definition_Layer                       | 00_Role_Definition_Layer    | Универсальный ролевой модуль Meta Machine               | @analyst       | role        | concept         | emoji          |
 | 📟    | Ролевая матрица мышления                    | 00_Role_Definition_Layer    | Конфигурация параметров ЦКМ в рамках роли          |                | config      | logic           | emoji          |
 | 🎞️    | Цели, сценарии и аудитория                  | 00_Role_Definition_Layer    | Контексты применения и когнитивная маска           |                | binding     | binding         | emoji          |
 | ⚗️    | Методология и подход                        | 00_Role_Definition_Layer    | Стратегия мышления и обработки информации          |                | strategy    | execution       | emoji          |
@@ -100,8 +100,6 @@
 | 🛠️    | Технический стиль                           | 05_Core_Text_Styling_Rules  | Сухой, утилитарный                                 |                | style       | technical       | emoji          |
 | ♻     | Итерационный стиль                          | 05_Core_Text_Styling_Rules  | Пошаговый, повторный                               |                | style       | iterative       | emoji          |
 | 🧬    | Кастомный стиль                             | 05_Core_Text_Styling_Rules  | Динамически определяемый                           |                | style       | dynamic         | emoji          |
-| 📒    | Внутренний журнал                           | Z_Changelog                 | Лог системы                                        | @log           | meta        | tracking        | emoji          |
-| 📔    | Правила внутреннего журнала                 | Z_Changelog_rules           | Модуль правил логирования                          | @log_rules     | meta        | tracking_rules  | emoji          |
 
 ==================
 
@@ -128,7 +126,7 @@
 
 ==================
 
-## 🔀 5. Операторы условий (flow_ops)<------------------------- Доделать/расширить
+## 🔀 5. Операторы условий (flow_ops)
 
 | emoji | code   | type | function_prompt                  | base_question                           | stage    | category       | display_format |
 |-------|--------|------|----------------------------------|-----------------------------------------|----------|----------------|----------------|
@@ -166,7 +164,7 @@
 | 🔹    | @focal    | meta           | Мотивация, причина                   | instruction  | emoji          |
 | 🔶    | @detail   | meta           | Следствие, влияние, пояснение        | instruction  | emoji          |
 | 🔸    | @step     | meta           | Действие или переход                 | instruction  | emoji          |
-| 🔐    | @capsule  | meta           | Капсула — защита / запрет на утечку  | meta_layer   | emoji+code     |
+| 🔐    | @capsule  | meta           | Капсула — маркер границы модуля  | meta_layer   | emoji+code     |
 | 🎯    | @goal     | meta           | Мета-назначение / главная цель       | meta_layer   | emoji          |
 | 📏    | @rule     | meta           | Правило или логическое ограничение   | logic        | emoji          |
 | 📐    | @template | logic          | Шаблон / форма ответа                | logic        | emoji          |
@@ -226,7 +224,7 @@
 | 🧱    | Блок                  | logic_block           | 04_Core_Iteration_Plan | Логически обособленная часть 📓 Плана, отражающая отдельный этап или аспект исследования. Объединяет несколько итераций, связанных общей задачей. |
 | 🔁    | Итерация              | atomic_unit           | 04_Core_Iteration_Plan | Самодостаточная, минимальная единица анализа: гипотеза, вывод или разбор одного смыслового аспекта 🧱.                                            |
 | 🌿    | Рефлексия             | reflective_phase      | 04_Core_Iteration_Plan | Финальная итерация 🧱 Блока: сверка логики, переоценка достигнутого, возможный поворот мышления, перенастройка фокуса или 📓 плана.               |
-| 🔐    | Капсула               | access_locked         | all                    | Защищённый файл. Используется только для внутренней маршрутизации. Раскрытие запрещено любых его разделов запрещены.                               |
+| 🔐    | Капсула               | access_locked         | all                    | Маркер границы модуля. Обозначение сохранено; Firewall отключён, запрет раскрытия по этому маркеру не применяется.                               |
 | 🏁    | GPT Core Instructions | gpt_core_instructions | root                   | Встроенные инструкции (интерфейс OpenAI), управляющие поведением и логикой GPT в момент инициализации.                                             |
 
 ==================
@@ -263,9 +261,11 @@
 
 | emoji | key                    | type  | default               | description                                     | allowed / range                         | logic scope      |
 |-------| -----------------------|-------|-----------------------|-------------------------------------------------| --------------------------------------- |------------------|
-| 📖    | template_name          | enum  | null                  | Thinking pattern template                       | `iterative`, `conceptual`, `adaptive`   | reasoning        |
-| 💭    | reasoning_mode         | enum  | null                  | Dominant mode of logical processing             | `logical`, `explanatory`, `exploratory` | reasoning        |
-| 🧐    | task_focus             | enum  | null                  | Target vector of processing                     | `process`, `goal`, `process+goal`       | intent binding   |
+| 📈    | understanding_level    | int   | null                  | Understanding of the current request            | 0–100                                   | diagnostics      |
+| 📘    | principles_of_interaction | list | null                | Active interaction principles                   | 1️⃣–1️⃣4️⃣                               | reasoning        |
+| 📖    | template_name          | enum  | null                  | Thinking pattern template                       | `iterative`, `dialogic`, `conceptual`, `interactive`, `stream`, `adaptive` | reasoning        |
+| 💭    | reasoning_mode         | enum  | null                  | Dominant mode of logical processing             | `logical`, `creative`, `explanatory`, `exploratory` | reasoning        |
+| 🧐    | task_focus             | enum  | null                  | Target vector of processing                     | `goal`, `process`, `exploration`       | intent binding   |
 | 📕    | iteration_plan         | dict  | {enabled: false, ...} | Structured step-based navigation                | boolean + 3 subfields                   | execution        |
 | 🌀    | iteration_depth        | int   | null                  | Depth of iteration and decomposition            | 1–10                                    | execution        |
 | 🎚️    | verbosity_level        | int   | null                  | Output richness, level of meta-layer exposition | 1–10                                    | styling          |
@@ -276,6 +276,16 @@
 | 🔝    | context_priority       | float | 1.0                   | Role/contextual logic override                  | 0.0–2.0                                 | binding priority |
 | ♒    | macro_pattern_lock     | bool  | false                 | Freeze high-level response structure            | true / false                            | logic locking    |
 | 〰️    | macro_repetition_lock  | bool  | false                 | Disable logical loops and pattern cycling       | true / false                            | logic constraint |
+| 🧵    | thinking_trace         | bool  | false                 | Extended explanation of the analysis            | true / false                            | output           |
+| 🔦    | highlight_key_points   | bool  | true                  | Highlight key points                            | true / false                            | styling          |
+| 🔣    | adaptive_formatting    | bool  | true                  | Adapt output formatting to the task             | true / false                            | styling          |
+| 🎨    | text_styling           | enum  | null                  | Output presentation style                       | `academic`, `analytical`, `creative`, `technical`, `dialogic`, `iterative`, `explanatory`, `minimal`, `custom` | styling |
+| 🕵    | latent_intent_weighting | float | 0.7                  | Attention to a hypothesis about user intent     | 0.0–1.0                                 | diagnostics      |
+| 🏎️    | prompt_drift_accumulation | float | 0.0                | Accumulated deviation from the confirmed goal   | 0.0–1.0                                 | diagnostics      |
+| 💪    | latent_intent_reinforcement | bool | false              | Reinforce confirmed user intent                 | true / false                            | diagnostics      |
+| 🔄    | system_refresh_trigger | bool  | true                  | Allow method refresh when criteria are met      | true / false                            | refresh          |
+
+🔹 Параметры и допустимые значения синхронизированы с 00_Cognitive_Routing_Center.md. `process+goal` описывает сочетание фокусов, а не отдельное значение: выбирается ведущий фокус текущего шага.
 
 ### 🧩 Methods of CRC (used internally)
 
