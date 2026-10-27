@@ -1,6 +1,6 @@
 <div align="center">
 
-# Family Meta Machine
+# 🧠 Family Meta Machine
 
 **Семейство Custom GPT с общим протоколом диалога**
 
@@ -13,6 +13,12 @@
 [Открыть сайт](https://meta-machine.vercel.app/#home) · [Инструкции и FAQ](https://meta-machine.vercel.app/#guide) · [Архитектура](https://meta-machine.vercel.app/#architecture) · [Примеры диалогов](#примеры-диалогов)
 
 </div>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/d05b6026-9d6d-4213-9de4-3f27457a19a9"><img src="https://github.com/user-attachments/assets/d05b6026-9d6d-4213-9de4-3f27457a19a9" alt="Историческая схема модулей и маршрута запроса Meta Machine" width="100%" /></a>
+</p>
+
+<p align="center"><sub>Модули и маршрут запроса Meta Machine</sub></p>
 
 ---
 
@@ -65,17 +71,6 @@ flowchart LR
 | [Нотация DLS](Spec_Slang_DLS.md) | Обозначения слоёв, приоритетов, ссылок и директив |
 
 [Исторический Firewall](00_Security_Check.md) сохранён отдельно и отключён в текущем протоколе.
-
-</details>
-
-<details>
-<summary><strong>Историческая схема архитектуры</strong></summary>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/d05b6026-9d6d-4213-9de4-3f27457a19a9"><img src="https://github.com/user-attachments/assets/d05b6026-9d6d-4213-9de4-3f27457a19a9" alt="Историческая схема модулей и маршрута запроса Meta Machine" width="100%" /></a>
-</p>
-
-Схема сохраняет исходные обозначения проекта. Актуальное описание взаимодействия модулей — в [статье на сайте](https://meta-machine.vercel.app/#architecture).
 
 </details>
 
